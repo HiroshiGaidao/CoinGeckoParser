@@ -1,0 +1,28 @@
+<div>
+    <table border="0.5" class="dataframe">
+    <thead>
+        <tr style="text-align: center;">
+            <th></th>
+            <th width="190px">Наименование</th>
+            <th width="150px">Цена</th>
+            <th width="215px">Timestamp</th>
+        </tr>
+    </thead>
+        <tbody>
+            {% for i in dataset %}
+                <tr>
+                <th>{{i[0]}}</th>
+                <td width="190px">{{i[1]}}</td>
+                <td width="150px">{{i[2]}}</td>
+                <td width="215px">{{time}}</td>
+                </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+</div>
+<form method="post" action="/">
+    <input type="submit" name="Update" value="View and Update">
+    <input type="submit" name="Hide" value="Hide">
+    </div>
+</form>
